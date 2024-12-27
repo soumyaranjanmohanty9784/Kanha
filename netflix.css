@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: "Poppins",sans-serif;
+    color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(netflix_main_image.png);
+    background-size: cover;
+    background-position: center;
+    padding:10px 8px;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin-left: 140px;
+}
+#btn2{
+    border: 0;
+    outline: 0;
+    background: red;
+    color: white;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-right: 150px;
+    cursor: pointer;
+}
+.btn{
+    background: transparent;
+    border: 1px solid white;
+    width: 120px;
+    margin-right: 20px;
+}
+.header_content{
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 50px;
+}
+.header_content h1{
+    font-family: "Martel Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 799;
+    
+    
+    
+}
+.header_content h3{
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.header_content p{
+    font-family: "Martel Sans", sans-serif;
+    font-size: 20px;
+}
+.form{
+    display:flex;
+    margin-left: 120px;
+    
+    
+}
+
+.form input{
+   
+   
+   width: 410px;
+   height: 50px;
+   margin-right: 10px;
+   background-color:rgba(0,0,0,0.7);
+   border: 1px solid lightcoral;
+   
+   
+}
+.form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    background-color:red;
+    border: 0;
+    outline: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 450;
+    width: 190px;
+    height: 50px;
+    margin-right: 110px;
+}
+
+
+
+
+
+.features{
+    padding: 50px 12px;
+    font-size: 22px;
+    background-color: black;
+    margin-top: 0.5rem;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text_col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+    padding-left: 90px;
+}
+.text_col h1{
+    font-family: "Martel Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+.img_col{
+    flex-basis: 50%;
+    margin-bottom: 20px;    
+}
+.img_col img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+.faq{
+    font-family: "Martel Sans", sans-serif;
+    padding: 10px 12%;
+    font-size: 18px;
+    text-align: center;
+    background-color: black;
+    margin-top: 0.5rem;
+}
+.faq h2{
+    font-weight: 750;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.questions{
+    
+    margin: 30px auto;
+    width: 100%;
+    max-width:100%;
+    padding-right: 100px;
+}
+.questions li{
+    
+    list-style: none;
+    width: 110%;
+    padding: 5px;
+    
+
+}
+.questions li label{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030; 
+    margin-bottom: 0.5px;
+    position: relative;
+    cursor: pointer;
+}
+label::after{
+    content: "+";
+    font-weight: lighter;
+    font-size: 60px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.questions .content{
+
+    
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: padding 0.5s;
+}
+.questions input[type="radio"]:checked+label+.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.questions input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
+.faq .form-control-sm{
+    max-width: 600px;
+    margin-left: 130px ;
+    
+}
+
+.faq small{
+    font-size: 20px;
+}
+
+
+
+
+
+.footer{
+    
+
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 200px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+}
+.footer-item a{
+    padding-top: 15px;
+    color: lightpink;
+    font-size: 14px;
+}
+.footer-item button{
+    margin-top: 15px;
+    border:1px solid lightpink;
+}
+.footer-item p{
+    margin-top: 15px;
+    font-size: 14px;
+    color: lightpink;
+}
+.footer-item h3{
+    font-size: 18px;
+    font-weight: 100;
+    color: lightpink;
+}
+.separation{
+    height: 0.5rem;
+    background-color: #232323;
+}
+.questions li label:hover{
+    background-color: #413f3f;
+    transition: ease 0.15s;
+}
+@media screen and(max-width:1000px){
+    .header{
+        flex-wrap: wrap;
+    }
+}
